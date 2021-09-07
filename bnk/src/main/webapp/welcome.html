@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Title</title>
+
+</head>
+
+<body style="background-color:#ABB2B9">
+    
+               
+        
+   
+    <br><br><br>
+    <h2>Welcome to Mikealsons Bank......................:)</h2>
+    <br><br>
+<div class="container">
+    <h3>Login as Customer</h3>
+    <form action="login" method="get">
+        <label>CustomerId</label>
+        <input class="form-control" type="text" name="userid" >
+        <label>CustomerPassword</label>
+        <input class="form-control" type="password" name="password" ><br>
+        
+        <button  type="submit" value="Login">Login</button><br><br>
+    </form>
+</div>
+<div class="container">
+	<p>if you are not an customer</p>
+    <h3>Click Here To SignUp</h3>
+    <button  type="submit" id="signup">SignUp</button>
+</div>
+
+<div class="container">
+    <h3>Login as Employee</h3>
+    <form action="EmployeLoginServlet" method="post">
+        <label>EmployeeId</label>
+        <input class="form-control" type="text" name="emp_id" >
+        <label>EmployeePassword</label>
+        <input class="form-control" type="password" name="emp_pwd" ><br>
+        
+        <button  type="submit" value="Login">Login AS EMPLOYEE</button><br><br>
+    </form>
+</div>
+
+
+
+
+<script type="text/javascript">
+    
+</script>
+<script type="text/javascript">
+    document.getElementById("signup").onclick = function () {
+        location.href = "http://localhost:9000/bank1/registering.html";
+    };
+
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

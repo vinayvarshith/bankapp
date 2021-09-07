@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Registration Page</title>
+</head>
+<body style="background-color:#AED6F1;">
+<center>
+<div class="container">
+<h3>Welcome to the Michealson Bank</h3>
+</div>
+</center>
+ <div class="container">
+	<div class="container">
+	<h1><u>Fill details for Registration</u></h1>
+	
+	<form action="bank" method="post" id="myForm" name="myForm">
+	
+	<table>
+	<tr>
+	<td>
+	<label>Customer Name :</label>
+	<input type="text" name="customer_name" id="customer_name" ></td>
+	</tr>
+	<tr>
+	<tr>
+	<td>
+	<label>Contact Number :</label>
+	<input type="number" name="contact_no" id="contact_no" ></td>
+	</tr>
+	<tr>
+	<tr>
+	<td>
+	<label>Email Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+	<input type="email" name="email_id"  id="email_id"></td>
+	</tr>
+	<tr>
+	<tr>
+	<td>
+	<label>Customer ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+	<input type="text" name="cust_id"  id="cust_id" > </td>
+	</tr>
+	<tr>
+	<tr>
+	<td>
+	<label>Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+	<input type="password" id="password" name="password" ></td>
+	</tr>
+	<tr align="center">
+	<td>
+	<button type="button" id="b2" >Register</button>
+	</td>
+	</tr>
+	</table>     
+	                                                                                                                                                                                                                                                                                  
+	</form> 
+	</div>
+	</div>
+	<div id="results" class="container"></div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script >
+	b2.onclick=()=>{
+	if(!document.getElementById('customer_name').value||!document.getElementById('contact_no').value||!document.getElementById('email_id').value||!document.getElementById('cust_id').value||!document.getElementById('password').value){
+		document.getElementById("results").innerHTML="<h3>Complete the form...</h3>"
+	}
+	else{
+	let url="http://localhost:9000/bank1/bank";
+	fetch(url,{
+		method :'post',
+		body: JSON.stringify({
+			cust_name : document.getElementById('customer_name').value,
+			cust_phno :document.getElementById('contact_no').value,
+			cust_emailid:document.getElementById('email_id').value,
+			cust_id :document.getElementById('cust_id').value,
+			
+			cust_pwd:document.getElementById('password').value
+		}),
+		headers :{
+		'Content-type':'application/json;charset=UTF-8',
+	},
+	})
+	.then(function(data){
+		
+		console.log(data)
+		alert("Record Created Successfully");
+	window.location.href="http://localhost:9000/bank1/rsuccess";
+		
+	})
+	.catch((error) => {
+		  console.error('Error:', error);
+		  alert(error);
+		});
+	}
+	alert("Registered Successfully");
+	window.location.href="http://localhost:9000/bank1/rsuccess";
+	}
+	
+
+	</script>
+	
+</body>
+</html>
