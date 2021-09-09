@@ -1,9 +1,9 @@
 # bankapp
 This is an online web based bank application.
+ABOUT PROJECT: This is a Banking WebApp created . SignUp Login/Logout to/from Appication Can View balance in account Can Deposit money into any account Can Withdraw from account Can Transfer money from one account to another account Can Open more then one Checking and/or Savings accounts
 
 
-
-Features:
+#Features:
 
 Client registration
 
@@ -26,7 +26,7 @@ System admin/employee managment modules
 
 Employee performs various operation on customers account
 
-Prerequisites:
+#Prerequisites:
 
 Be sure you have the following installed on your development machine:
 
@@ -41,14 +41,14 @@ Tomcat Server 9
 
 Postgresql
 
-Front-End Tech Stack & Tools:
+#Front-End Tech Stack & Tools:
 1. HTML5
 2. CSS3
 3. Bootstrap 4.6v
 4. JavaScript ES6
 5. JSON for Parsing
 
-Backend-End Tech Stack & Tools
+#Backend-End Tech Stack & Tools
 1. Java8
 2. Servlet
 3. JDBC
@@ -56,11 +56,11 @@ Backend-End Tech Stack & Tools
 5. MAVEN
 6. TOMCATSERVER9
 
-Testing Tools
+#Testing Tools
 1. POSTMAN for HTTP Request and Response Test
 2. JNUNIT for Testing Java Code Logic
 
-IDE'S
+#IDE'S
 1. VS CODE for Frontend Code
 2. SPRING BOOT for Backend Code
 3. DBEAVER for SQL Scripts
