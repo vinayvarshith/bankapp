@@ -2,28 +2,6 @@
 This is an online web based bank application.
 ABOUT PROJECT: This is a Banking WebApp created . SignUp Login/Logout to/from Appication Can View balance in account Can Deposit money into any account Can Withdraw from account Can Transfer money from one account to another account Can Open more then one Checking and/or Savings accounts
 
-#Features:
-
-Client registration
-
-
-Client account opening
-
-
-See balance after every transaction in the Transaction Report
-
-
-
-Client Deposit/Withdrawl Amount
-
-
-View Transaction
-
-
-System admin/employee managment modules
-
-
-Employee performs various operation on customers account
 
 #Prerequisites:
 
